@@ -37,7 +37,7 @@ jobs:
       - name: Sync Capacitor Android Web Assets
         run: |
           if [ -d "mobile/android" ]; then
-            cd mobile && npx @capacitor/cli sync android
+            cd mobile && npm install && npx @capacitor/cli sync android
           else
             echo "Capacitor configuration ready for Android project initialization"
           fi
