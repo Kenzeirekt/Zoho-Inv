@@ -4,14 +4,14 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "node --watch src/server.js",
+    "dev": "node src/server.js",
     "start": "node src/server.js",
     "check": "node --check src/server.js"
   },
   "dependencies": {
-    "better-sqlite3": "^13.0.3",
+    "@google/genai": "latest",
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "zod": "^4.6.7"
+    "zod": "^3.24.2"
   }
 }

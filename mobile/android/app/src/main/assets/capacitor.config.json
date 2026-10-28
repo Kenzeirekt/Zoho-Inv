@@ -1,0 +1,9 @@
+{
+	"appId": "com.stockwise.inventory",
+	"appName": "Stockwise",
+	"webDir": "../apps/web/dist",
+	"bundledWebRuntime": false,
+	"server": {
+		"cleartext": true
+	}
+}

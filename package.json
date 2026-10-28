@@ -4,16 +4,13 @@
   "version": "0.1.0",
   "workspaces": [
     "apps/web",
-    "apps/api",
-    "mobile"
+    "apps/api"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev --workspace apps/api\" \"npm run dev --workspace apps/web\"",
-    "dev:api": "npm run dev --workspace apps/api",
-    "dev:web": "npm run dev --workspace apps/web",
-    "start": "npm run start --workspace apps/api"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.2"
+    "build": "npm run build --workspace @stockwise/web",
+    "build:frontend": "npm run build --workspace @stockwise/web",
+    "dev": "npm run build && node apps/api/src/server.js",
+    "start": "node apps/api/src/server.js",
+    "test": "node apps/api/src/server.js"
   }
 }
