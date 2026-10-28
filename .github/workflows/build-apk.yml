@@ -50,7 +50,7 @@ jobs:
       - name: Build Android Debug APK
         run: |
           if [ -d "mobile/android" ]; then
-            cd mobile/android && ./gradlew assembleDebug
+            cd mobile/android && chmod +x gradlew && ./gradlew assembleDebug
           else
             echo "Android project directory present - ready for gradlew assembleDebug"
           fi
